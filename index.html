@@ -13,28 +13,82 @@
 
     <!-- external Scripts -->
     <script defer src="scripts/getdates.js"></script>
+    <script defer src="scripts/navigation.js"></script>
+    <script defer src="scripts/courses.js"></script>
+
 
     <link
         href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto&display=swap"
         rel="stylesheet">
-    
+
     <link href="styles/normalize.css" rel="stylesheet">
     <!-- phone-default -->
     <link href="styles/base.css" rel="stylesheet">
+    <link href="styles/larger.css" rel="stylesheet">
 
 </head>
 
 <body>
+    <header>
+        <img src="images/d6.svg" alt="dice logo" width="1" height="1">
+        <span>David Jukes</span>
+        <button id="ham-btn" class="hamburger"></button>
+    </header>
+
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li class="current"><a href="#">Home</a></li>
+            <li><a href="chamber.html">Chamber Project</a></li>
+            <li><a href="final.html">Final Project</a></li>
+        </ul>
+    </nav>
+
     <main>
-        <h1>Vault Of Jukes -  WDD 231 Course work</h1>
+        <h1>Home</h1>
+        <section class="about">
+            <h2>About Me</h2>
+            <p>I am originally from Southern California. I now live in the greater Dallas Fort Worth Metroplex.
+                I have an amazing wife who I absolutely adore and together we have 6 children.
+                Our youngest is 16 years old. For fun and to give back
+                I have spent many years supporting youth wrestling as a dad, coach, club director, and board member of
+                the region. </p>
+        </section>
+        <section class="photo">
+            <h2>student photo</h2>
+            <img src="images/david_jukes.webp" alt="David Jukes in Dominican Republic">
+        </section>
+        <section class="crcsect">
+            <h2>Web Certificate Courses</h2>
+            <div id="crs-btns" class="crsfilter">
+                <button id="all-btn">All</button>
+                <button id="cse-btn">CSE</button>
+                <button id="wdd-btn">WDD</button>
+            </div>
+
+            <div id="crs-container" class="courses">
+                
+            </div>
+            <p id="crs-sum"> </p>
+        </section>
     </main>
-    
+
     <footer id="foot">
+        <div class="footer-links">
+            <a href="https://www.linkedin.com/in/jukesdavida/"><img src="images/github.svg" alt="GitHub"></a>
+            <a href="https://github.com/djukes-byupathway"><img src="images/linkedin.svg" alt="GitHub"></a>
+            <a href="https://teams.microsoft"><img src="images/microsoft-teams.svg" alt="GitHub"></a>
+            <a href="https://www.facebook.com/david.a.jukes"><img src="images/facebook.svg" alt="GitHub"></a>
+            <a href="https://web.whatsapp.com"><img src="images/whatsapp.svg" alt="GitHub"></a>
+
+        </div>
+
         <p><span id="currentyear"></span> 🇺🇸 David Jukes 🇺🇸 Texas, USA</p>
         <!-- year should be displayed as the copyright symbol then just year -->
         <p id="lastModified"></p>
         <!-- last modified should be in this format: 05/30/2025 13:52:42 -->
     </footer>
+    
+
 </body>
 
 </html>
