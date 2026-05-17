@@ -1,0 +1,296 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+/* Analogous Palette */
+:root {
+    /* Primary Colors */
+    --primary-0: #0f1d24;
+    --primary-100: #0f1d24;
+    --primary-200: #264d5e;
+    --primary-300: ;
+    --primary-400: #84b6cd;
+
+    /* Secondary Colors */
+    --secondary-0: #0f1324;
+    --secondary-100: #0f1324;
+    --secondary-200: #26325e;
+    --secondary-300: #4458a7;
+    --secondary-400: #8492cd;
+
+    /* Accent Colors */
+    --accent-0: #0f2420;
+    --accent-100: #0f2420;
+    --accent-200: #265e54;
+    --accent-300: #44a795;
+    --accent-400: #84cdbf;
+
+    /* Neutral Colors */
+    --neutral-0: #17191c;
+    --neutral-100: #3c4048;
+    --neutral-200: #6b7280;
+    --neutral-300: #a0a6b0;
+    --neutral-400: #d8dadf;
+}
+
+/*----------- Lato Classes from Google Fonts --------------*/
+.lato-thin {
+    font-family: "Lato", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.lato-light {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.lato-regular {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.lato-bold {
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.lato-black {
+    font-family: "Lato", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.lato-thin-italic {
+    font-family: "Lato", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+}
+
+.lato-light-italic {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.lato-regular-italic {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.lato-bold-italic {
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.lato-black-italic {
+    font-family: "Lato", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* {
+    font-family: "Lato", "roboto", sans-serif;
+    box-sizing: border-box;
+}
+
+/*----------- BODY --------------*/
+body {
+    font-size: 16px;
+    font-family: 'Lato', 'Roboto', sans-serif;
+}
+
+
+
+/*----------- HEADER --------------*/
+header {
+    display: grid;
+    grid-template-columns: 44px auto 44px;
+    padding: 5px 0 5px 10px;
+    align-items: end;
+    border-bottom: solid 1px #ddd;
+    column-gap: 8px;
+    background-color: var(--primary-0);
+}
+
+header img {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding-bottom: 5px;
+}
+
+header span {
+    font-size: 2rem;
+    color: var(--neutral-400);
+}
+
+/*----------- NAVIGATION --------------*/
+
+/* hamburger navigation */
+.hamburger {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: var(--neutral-400);
+    cursor: pointer;
+
+}
+
+.hamburger::before {
+    content: "\2630";
+}
+
+.hamburger.show::before {
+    content: "\00D7";
+}
+
+/*  navigation */
+.navigation {
+    display: none;
+    background-color: var(--primary-0);
+    ;
+}
+
+.navigation.show {
+    display: block;
+}
+
+.navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: var(--primary-0);
+}
+
+.navigation li {
+    background-color: var(--primary-200);
+}
+
+.navigation a {
+    display: block;
+    padding: .8rem 10px;
+    text-decoration: none;
+    border-bottom: solid 1px #ddd;
+    color: var(--neutral-400);
+}
+
+.navigation li.current {
+    background-color: var(--accent-200);
+}
+
+.navigation a:hover {
+    background-color: var(--secondary-400);
+}
+
+/*----------- MAIN --------------*/
+main {
+    padding: 0.5rem 10px;
+    min-height: 20rem;
+    background-color: var(--primary-400);
+    display: block;
+}
+
+h1 {
+    /* font-family: 'Caveat', cursive; */
+    font-size: 3rem;
+    color: var(--primary-0);
+    /* -webkit-text-stroke: 2px var(--neutral-400); */
+    margin-left: 10px;
+}
+
+h2 {
+    margin: 0;
+    background-color: var(--primary-0);
+    border: 1px solid var(--neutral-100);
+    border-radius: .5rem .5rem 0 0;
+    color: var(--accent-400);
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+}
+
+p {
+    margin: 0;
+    padding: .8rem;
+}
+
+section {
+    margin: 1rem 0;
+    padding: 0;
+    border: 1px solid var(--neutral-100);
+    border-radius: .5rem;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    padding: .5rem;
+}
+
+/*----------- FOOTER --------------*/
+footer {
+    background-color: var(--primary-0);
+    color: var(--accent-400);
+    text-align: center;
+}
+
+
+.footer-links a {
+    color: var(--accent-400);
+    margin: 0;
+    padding: 0;
+}
+
+.footer-links {
+    padding: 0 .8rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    background-color: var(--primary-400);
+}
+.footer-links img {
+    max-height: 48px;
+}
+
+/*----------- Course Section --------------*/
+
+.crsfilter,
+.courses {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: .8rem;
+    padding: .8rem;
+    border-bottom: solid 1px var(--neutral-200);
+}
+
+.crsfilter button {
+    background-color: var(--primary-0);
+    color: var(--primary-400);
+    border: solid 1px var(--neutral-200);
+    border-radius: .5rem;
+}
+
+/* help!!! */
+.card {
+    background-color: var(--neutral-100);
+    color: var(--neutral-400);
+    border: solid 1px var(--neutral-200);
+    border-radius: .5rem;
+    text-align: center;
+}
+
+.complete {
+    background-color: var(--accent-400);
+    color: var(--accent-0);
+}
