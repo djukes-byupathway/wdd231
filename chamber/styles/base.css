@@ -4,7 +4,7 @@ html {
     -ms-text-size-adjust: 100%;
 }
 
-/* Analogous Palette */
+/* Palette from actual mckinney chamber site */
 :root {
     /* Primary Colors */
     --primary-0: #0f1d24;
@@ -33,6 +33,42 @@ html {
     --neutral-200: #6b7280;
     --neutral-300: #a0a6b0;
     --neutral-400: #d8dadf;
+
+/* CSS HEX */
+    --9d7169: #9d7169;
+    --d59063: #d59063;
+    --0c395a: #0c395a;
+    --e76140: #e76140;
+    --609074: #609074;
+    --f78f3e: #f78f3e;
+    --5f6b79: #5f6b79;
+    --87acc2: #87acc2;
+    --e6c2a8: #e6c2a8;
+
+   /*  
+   
+   // SCSS HEX 
+    $#9d7169: #9d7169;
+    $#d59063: #d59063;
+    $#0c395a: #0c395a;
+    $#e76140: #e76140;
+    $#609074: #609074;
+    $#f78f3e: #f78f3e;
+    $#5f6b79: #5f6b79;
+    $#87acc2: #87acc2;
+    $#e6c2a8: #e6c2a8;
+
+     //SCSS RGB 
+    $#9d7169: rgba(157, 113, 105, 1);
+    $#d59063: rgba(213, 144, 99, 1);
+    $#0c395a: rgba(12, 57, 90, 1);
+    $#e76140: rgba(231, 97, 64, 1);
+    $#609074: rgba(96, 144, 116, 1);
+    $#f78f3e: rgba(247, 143, 62, 1);
+    $#5f6b79: rgba(95, 107, 121, 1);
+    $#87acc2: rgba(135, 172, 194, 1);
+    $#e6c2a8: rgba(230, 194, 168, 1);
+ */
 }
 
 /*----------- Lato Classes from Google Fonts --------------*/

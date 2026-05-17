@@ -1,0 +1,67 @@
+{
+    "members": [
+        {
+        "company": "AmVarra",
+        "address": "",
+        "phone": "",
+        "url": "",
+        "imageurl": "",
+        "memberlevel": "1"
+        
+    },
+    {
+        "company": "WORKFORCE SOLUTIONS FOR NORTH CENTRAL TEXAS",
+        "address": "291 Eldorado Pkwy, McKinney,TX, 75069",
+        "phone": "972-542-3381 x3100",
+        "url": " http://www.workintexas.com/",
+        "imageurl": "https://www.workintexas.com/vosnet/Handlers/Content/Images/Image.ashx?splash/man-texting-on-phone.jpg",
+        "memberlevel": "2",
+        "about": "Workforce Solutions for North Central Texas provides services your company needs to succeed. With 12 offices throughout North Central Texas, our team is convenient to work with and saves you money."
+    },
+    {
+        "company": "MISSING PIECES AGENCY",
+        "address": "",
+        "phone": "(888) 909-7040",
+        "url": "https://missingpiecesagency.net",
+        "imageurl": "",
+        "memberlevel": "1",
+        "about": ""
+    },
+    {
+        "company": "Boss Level Engaged",
+        "address": "",
+        "phone": " (469) 480-4263",
+        "url": "http://www.bosslevelengaged.com/",
+        "imageurl": "",
+        "memberlevel": "1",
+        "about": "Boss Level Engaged is for leaders who are done juggling everything alone and ready to level up. I work hands-on with small business owners and nonprofit leaders to cut through the noise, get clear on what actually matters, and take intentional next steps. No fluff. No one-size-fits-all formulas. Just real support to help you move forward with confidence."
+    },
+    {
+        "company": "MCKINNEY CHUPACABRAS FC",
+        "address": "120 W Louisiana St, McKinney, TX, 75069",
+        "phone": "(214) 207-9812",
+        "url": "http://www.mckinneychupacabras.com/",
+        "imageurl": "https://images.squarespace-cdn.com/content/v1/66b12bc7d79a56583325ec44/6caab048-6240-4f10-9a41-fc2016a5df50/CHUPACABRAS_FC_LOGO.png",
+        "memberlevel": "1",
+        "about": "McKinney Chupacabras FC is McKinney’s premier pre-professional soccer club, founded in 2024 and competing in USL League Two. The team plays at Ron Poe Stadium, bringing high-quality, family-friendly soccer to the community. Guided by a strong “Community First” mission, the Chupacabras actively support local businesses, youth development programs, and civic initiatives. The club provides opportunities for athletes and young professionals to grow both on and off the field, contributing to McKinney’s dynamic and expanding community. As proud members of the McKinney Chamber of Commerce, McKinney Chupacabras FC is committed to strengthening connections and enriching the local economy."
+    },
+    {
+        "company": "Emmerson",
+        "address": "3200 Emerson way, Mckinney, TX, 75070",
+        "phone": "(972) 542-5512",
+        "url": "http://www.emerson.com/",
+        "imageurl": "https://www.emerson.com/is/image/emerson/logo?fmt=webp-alpha&qlt=95",
+        "memberlevel": "1",
+        "about": "Emerson is a global technology and engineering company providing innovative solutions for customers in industrial, commercial, and residential markets. Emerson is a Fortune 500 company with $14.5 billion in sales and 155 manufacturing locations worldwide. Our Emerson Automation Solutions business helps process, hybrid, and discrete manufacturers maximize production, protect personnel and the environment while optimizing their energy and operating costs. Our Emerson Commercial and Residential Solutions business helps ensure human comfort and health, protect food quality and safety, advance energy efficiency, and create sustainable infrastructure. Emerson has been a longtime investor in the McKinney community."
+    },
+    {
+        "company": "RAYTHEON",
+        "address": "2501 W. University Dr., M/S 8089, McKinney, TX, 75071",
+        "phone": "(972) 952-6613",
+        "url": "https://www.raytheonintelligenceandspace.com/",
+        "imageurl": "https://prd-sc102-cdn.rtx.com/raytheon/-/media/themes/raytheon-technologies/rtx-shared/rtx-theme/images/raytheon.svg?rev=c0d2d88fe39b4f54b95f79444c566c94&rid=a5829bdc17c74537842441a8a1b055f2&w=354&hash=ED664F3C75561C12BA0B44D12FAD89FF",
+        "memberlevel": "1",
+        "about": "Raytheon Intelligence & Space delivers the disruptive technologies its customers need to succeed in any domain, against any challenge. A developer of advanced sensors, training, and cyber and software solutions, Raytheon Intelligence & Space provides a decisive advantage to civil, military and commercial customers. Key stats include: $15B in annual revenue 39,000 employees working in more than 500 U.S. locations and 40 countries"
+    }
+    ]
+}
