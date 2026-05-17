@@ -1,17 +1,9 @@
 {
     "members": [
-        {
-        "company": "AmVarra",
-        "address": "",
-        "phone": "",
-        "url": "",
-        "imageurl": "",
-        "memberlevel": "1"
-        
-    },
+
     {
         "company": "WORKFORCE SOLUTIONS FOR NORTH CENTRAL TEXAS",
-        "address": "291 Eldorado Pkwy, McKinney,TX, 75069",
+        "address": "291 El Dorado Pkwy, McKinney,TX, 75069",
         "phone": "972-542-3381 x3100",
         "url": " http://www.workintexas.com/",
         "imageurl": "https://www.workintexas.com/vosnet/Handlers/Content/Images/Image.ashx?splash/man-texting-on-phone.jpg",
@@ -20,19 +12,19 @@
     },
     {
         "company": "MISSING PIECES AGENCY",
-        "address": "",
+        "address": "1912 University Business Drive Suite 409, McKinney, TX 75071",
         "phone": "(888) 909-7040",
         "url": "https://missingpiecesagency.net",
-        "imageurl": "",
+        "imageurl": "https://media.licdn.com/dms/image/v2/D560BAQEgfaaC1YzQOA/company-logo_200_200/B56ZZzmDw6GQAI-/0/1745696079193/missingpiecesagency_logo?e=1780531200&v=beta&t=ybJHeP2U6F51qGip0spAU5koGiPtBGTDvCqjnfwww_U",
         "memberlevel": "1",
-        "about": ""
+        "about": "We are watching..."
     },
     {
         "company": "Boss Level Engaged",
-        "address": "",
+        "address": "123 Nowhere Place, McKinney, TX, 75071",
         "phone": " (469) 480-4263",
         "url": "http://www.bosslevelengaged.com/",
-        "imageurl": "",
+        "imageurl": "https://images.squarespace-cdn.com/content/v1/64a5ddf3ba7f994408691678/e2209ed8-3900-4138-b182-10c71a9a3f4c/boss-level-engaged-logotype-full-color-rgb-900px-w-72ppi.png",
         "memberlevel": "1",
         "about": "Boss Level Engaged is for leaders who are done juggling everything alone and ready to level up. I work hands-on with small business owners and nonprofit leaders to cut through the noise, get clear on what actually matters, and take intentional next steps. No fluff. No one-size-fits-all formulas. Just real support to help you move forward with confidence."
     },

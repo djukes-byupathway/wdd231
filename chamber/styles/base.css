@@ -71,67 +71,6 @@ html {
  */
 }
 
-/*----------- Lato Classes from Google Fonts --------------*/
-.lato-thin {
-    font-family: "Lato", sans-serif;
-    font-weight: 100;
-    font-style: normal;
-}
-
-.lato-light {
-    font-family: "Lato", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-}
-
-.lato-regular {
-    font-family: "Lato", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
-
-.lato-bold {
-    font-family: "Lato", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-}
-
-.lato-black {
-    font-family: "Lato", sans-serif;
-    font-weight: 900;
-    font-style: normal;
-}
-
-.lato-thin-italic {
-    font-family: "Lato", sans-serif;
-    font-weight: 100;
-    font-style: italic;
-}
-
-.lato-light-italic {
-    font-family: "Lato", sans-serif;
-    font-weight: 300;
-    font-style: italic;
-}
-
-.lato-regular-italic {
-    font-family: "Lato", sans-serif;
-    font-weight: 400;
-    font-style: italic;
-}
-
-.lato-bold-italic {
-    font-family: "Lato", sans-serif;
-    font-weight: 700;
-    font-style: italic;
-}
-
-.lato-black-italic {
-    font-family: "Lato", sans-serif;
-    font-weight: 900;
-    font-style: italic;
-}
-
 /*----------- apply a natural box layout model to all elements --------------*/
 * {
     font-family: "Lato", "roboto", sans-serif;
@@ -143,8 +82,6 @@ body {
     font-size: 16px;
     font-family: 'Lato', 'Roboto', sans-serif;
 }
-
-
 
 /*----------- HEADER --------------*/
 header {
@@ -236,10 +173,8 @@ main {
 }
 
 h1 {
-    /* font-family: 'Caveat', cursive; */
     font-size: 3rem;
     color: var(--primary-0);
-    /* -webkit-text-stroke: 2px var(--neutral-400); */
     margin-left: 10px;
 }
 
@@ -299,34 +234,33 @@ footer {
     max-height: 48px;
 }
 
-/*----------- Course Section --------------*/
-
-.crsfilter,
-.courses {
+/*----------- card Section --------------*/
+.grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: .8rem;
-    padding: .8rem;
-    border-bottom: solid 1px var(--neutral-200);
+    grid-gap: 0.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
 }
-
-.crsfilter button {
-    background-color: var(--primary-0);
-    color: var(--primary-400);
-    border: solid 1px var(--neutral-200);
-    border-radius: .5rem;
-}
-
-/* help!!! */
-.card {
-    background-color: var(--neutral-100);
+.grid section {
+    margin: 0.5rem;
+    padding: 0.5rem;
+    background-color: var(--primary-200);
+    border: 1px solid rgb(0 0 0 / 10%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     color: var(--neutral-400);
-    border: solid 1px var(--neutral-200);
-    border-radius: .5rem;
+}
+
+.grid section>p {
+    margin: .5rem;
+    font-size: smaller;
     text-align: center;
 }
 
-.complete {
-    background-color: var(--accent-400);
-    color: var(--accent-0);
+.grid img {
+    width: auto;
+    max-width: 325px;
+    box-shadow: 0 0 30px #777;
+    height: 200px;
+    border: 1px solid #111;
 }
