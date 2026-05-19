@@ -266,21 +266,19 @@ footer h2 {
         &>* {
             margin: 0 1rem;
         }
-
-        img {
-            display: none;
-        }
-
-        h2 {
-            font-size: 1rem;
-        }
-
         &:nth-child(even) {
             background-color: #bbb;
         }
     }
 }
 
+.list img {
+    display: none;
+}
+
+.list h2 {
+    font-size: 1rem;
+}
 
 .grid {
     display: grid;
@@ -295,18 +293,18 @@ footer h2 {
         &>* {
             margin: 0.1rem;
         }
-
-        h2 {
-            display: none;
-        }
     }
+}
 
-    img {
-        width: auto;
-        max-width: 325px;
-        box-shadow: 0 0 30px #777;
-        height: 200px;
-        border: 1px solid #111;
-        background-color: var(--neutral-400);
-    }
+.grid h2 {
+    display: none;
+}
+
+.grid img {
+    width: auto;
+    max-width: 325px;
+    box-shadow: 0 0 30px #777;
+    height: 200px;
+    border: 1px solid #111;
+    background-color: var(--neutral-400);
 }
