@@ -7,7 +7,7 @@ const listbutton = document.querySelector("#btnList")
 async function getMemberData() {
     const response = await fetch(url);
     const data = await response.json();
-    console.table(data.members); // temporary testing of data response
+    // console.table(data.members); // temporary testing of data response
     displayMembers(data.members);
 } // end member data
 
