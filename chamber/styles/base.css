@@ -35,7 +35,7 @@ html {
     --neutral-400: #d8dadf;
 
     /* CSS HEX */
-    --9d7169: #9d7169;
+    /* --9d7169: #9d7169;
     --d59063: #d59063;
     --0c395a: #0c395a;
     --e76140: #e76140;
@@ -43,7 +43,7 @@ html {
     --f78f3e: #f78f3e;
     --5f6b79: #5f6b79;
     --87acc2: #87acc2;
-    --e6c2a8: #e6c2a8;
+    --e6c2a8: #e6c2a8; */
 
     /*  
    
@@ -201,11 +201,6 @@ section {
     }
 }
 
-img {
-    width: 100%;
-    height: auto;
-    padding: .5rem;
-}
 
 /*----------- FOOTER --------------*/
 footer {
@@ -245,11 +240,12 @@ footer h2 {
     background-color: var(--primary-0);
     text-align: center;
 
-    button {
-        padding: 0.5rem 1rem;
-        font-weight: 700;
-        background-color: var(--primary-400);
-    }
+}
+
+.member-menu button {
+    padding: 0.5rem 1rem;
+    font-weight: 700;
+    background-color: var(--primary-400);
 }
 
 .list {
@@ -294,9 +290,11 @@ footer h2 {
         &>* {
             margin: 0.1rem;
         }
-h2 {
-    display: none;
-}    }
+
+        h2 {
+            display: none;
+        }
+    }
 
     img {
         width: auto;
