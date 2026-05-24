@@ -123,11 +123,9 @@ header span {
 }
 
 .navigation li.current {
-    /* background-color: var(--accent-400); */
 
     a {
         text-decoration: underline;
-        /* color: var(--accent-0); */
     }
 
 }
