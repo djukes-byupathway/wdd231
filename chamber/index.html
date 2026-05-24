@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Home - McKinney, TX Chamber of Commerce">
+    <meta name="description" content="Home page for McKinney, TX Chamber of Commerce">
     <meta name="author" content="David Jukes">
 
     <title>McKinney, TX - Chamber of Commerce</title>
@@ -12,47 +12,168 @@
 
     <!-- external Scripts -->
     <script defer src="scripts/getdates.js"></script>
+    <script defer src="scripts/navigation.js"></script>
+    <script defer src="scripts/getweather.js"></script>
 
 
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- Style Sheets -->
+    <link href="styles/normalize.css" rel="stylesheet">
+    <link href="styles/chamber.css" rel="stylesheet">
+    <link href="styles/chamber-large.css" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="icon" href="dave-icon.ico">
+
+    <!-- Social Media -->
+    <meta property="og:title" content="Home page for McKinney TX Chamber of Commerce">
+    <meta property="og:description" content="McKinney TX Chamber of Commerce - Landing Page ">
+    <meta property="og:url" content="https://djukes-byupathway.github.io/wdd231/">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:image" content="https://www.mckinneychamber.com/wp-content/uploads/Chamber-logo-hz-™.png">
+    <meta property="og:type" content="website">
 
 </head>
 
 <body>
-<header>
-    <img src="images/d6-die.svg" alt="dice logo" width="1" height="1">
-    <span>David Jukes</span>
-    <button id="ham-btn" class="hamburger" aria-label="Hamburger Button"></button>
-</header>
+    <header>
+        <img src="images/d6-die.svg" alt="dice logo" width="1" height="1">
+        <span>McKinney <br> Chamber of Commerce</span>
+        <button id="ham-btn" class="hamburger" aria-label="Hamburger Button"></button>
+    </header>
 
-<nav id="nav-bar" class="navigation">
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="#">Discover</a></li>
-        <li class="current"><a href="#">Business Directory</a></li>
-        <li><a href="#">Discover</a></li>
-    </ul>
-</nav>
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li class="current"><a href="index.html">Home</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="join.html">Join</a></li>
+        </ul>
+    </nav>
 
-<main>
-    <h1>Chamber</h1>
+    <main>
+        
+        <section class="hero" id="hero">
+            <img src="https://parks.mckinneytexas.org/wp-content/uploads/2025/05/gabenesbittcommunitypark-42-1600.jpg"
+                alt="McKinney TX">
+            <span>When it comes to Business,<br>We are on the Same Page</span>
+                <button>Keynote Tickets</button>
+        </section>
 
-</main>
+        
+        <div class="content">
+            <h1>Home</h1>
+            <section>
+                <h2>Events</h2>
+                <h3>an h3 title</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos perferendis nisi adipisci omnis! Quod
+                    sunt,
+                    repellat quasi consequuntur delectus officia ullam omnis assumenda, iure, sapiente blanditiis alias
+                    quisquam atque neque.</p>
+                <h3>another h3 title</h3>
+                <p>another paragraph - Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam, nisi.</p>
+            </section>
 
-<footer id="foot">
-    <div class="footer-links">
-        <a href="https://www.linkedin.com/in/jukesdavida/"><img src="images/github.svg" alt="GitHub"></a>
-        <a href="https://github.com/djukes-byupathway"><img src="images/linkedin.svg" alt="GitHub"></a>
-        <a href="https://teams.microsoft"><img src="images/microsoft-teams.svg" alt="GitHub"></a>
-        <a href="https://www.facebook.com/david.a.jukes"><img src="images/facebook.svg" alt="GitHub"></a>
-        <a href="https://web.whatsapp.com"><img src="images/whatsapp.svg" alt="GitHub"></a>
+            <section>
+                <h2>current weather</h2>
+                <div id="currentweather">
+                    <img id="weather-icon" src="" alt="">
+                    <p><span id='ctemp'>75</span>&deg;F<br>
+                        <span id="cdesc">Partly Cloudy</span><br>
+                        High: <span id="hight">85</span>&deg;<br>
+                        Low: <span id="lowt">54</span>&deg;<br>
+                        Humidity: <span id="hum">34</span>%<br>
+                        Sunrise: <span id="srise"></span><br>
+                        Sunset:<span id="sset"></span>
+                    </p>
+                </div>
 
-    </div>
+            </section>
 
-    <p><span id="currentyear"></span> 🇺🇸 David Jukes 🇺🇸 Texas, USA</p>
-    <!-- year should be displayed as the copyright symbol then just year -->
-    <p id="lastModified"></p>
-    <!-- last modified should be in this format: 05/30/2025 13:52:42 -->
-</footer>
+
+            <section id="forcast">
+                <h2>weather forecast</h2>
+                <p>Today: <span id="todayfc"></span> &deg;F</p>
+                <p> <span id="tomorrowfc"></span>: &deg;F</p>
+                <p> <span id="nextfc"></span>&deg;F</p>
+            </section>
+
+        </div>
+
+        <div id="spotlight" class="spotlight">
+            <h2>
+                member highlight
+            </h2>
+            <div class="spot">
+                <div>
+                    <h3>Business Name</h3>
+                    <p>Business Tag Line</p>
+                </div>
+                <div class="spot-details">
+                    <img src="https://media.licdn.com/dms/image/v2/D560BAQEgfaaC1YzQOA/company-logo_200_200/B56ZZzmDw6GQAI-/0/1745696079193/missingpiecesagency_logo?e=1780531200&v=beta&t=ybJHeP2U6F51qGip0spAU5koGiPtBGTDvCqjnfwww_U"
+                        alt="Missing Pieces Agency">
+                    <p class="email">Email: info@gmail.com</p>
+                    <p class="phone">Phone: 800-867-5309</p>
+                    <p class="website">url: mybusiness.com</p>
+                </div>
+            </div>
+            <div class="spot">
+                <div>
+                    <h3>Business Name</h3>
+                    <p>Business Tag Line</p>
+                </div>
+                <div class="spot-details">
+                    <img src="https://media.licdn.com/dms/image/v2/D560BAQEgfaaC1YzQOA/company-logo_200_200/B56ZZzmDw6GQAI-/0/1745696079193/missingpiecesagency_logo?e=1780531200&v=beta&t=ybJHeP2U6F51qGip0spAU5koGiPtBGTDvCqjnfwww_U"
+                        alt="Missing Pieces Agency">
+                    <p class="email">Email: info@gmail.com</p>
+                    <p class="phone">Phone: 800-867-5309</p>
+                    <p class="website">url: mybusiness.com</p>
+                </div>
+            </div>
+            <div class="spot">
+                <div>
+                    <h3>Business Name</h3>
+                    <p>Business Tag Line</p>
+                </div>
+                <div class="spot-details">
+                    <img src="https://media.licdn.com/dms/image/v2/D560BAQEgfaaC1YzQOA/company-logo_200_200/B56ZZzmDw6GQAI-/0/1745696079193/missingpiecesagency_logo?e=1780531200&v=beta&t=ybJHeP2U6F51qGip0spAU5koGiPtBGTDvCqjnfwww_U"
+                        alt="Missing Pieces Agency">
+                    <p class="email">Email: info@gmail.com</p>
+                    <p class="phone">Phone: 800-867-5309</p>
+                    <p class="website">url: mybusiness.com</p>
+                </div>
+            </div>
+
+        </div>
+
+
+    </main>
+
+    <footer id="foot">
+        <div class="left">
+            <h2> McKinney Chamber of Commerce</h2>
+            <p>7300 SH 121, Ste. 200 A</p>
+            <p>McKinney, TX 75070</p>
+            <p>972.542.0163 </p>
+        </div>
+        <div class="footer-links">
+            <a href="https://github.com/djukes-byupathway"><img src="images/linkedin.svg" alt="Linked In"></a>
+            <a href="https://www.facebook.com/david.a.jukes"><img src="images/facebook.svg" alt="Facebook"></a>
+            <a href="https://web.whatsapp.com"><img src="images/whatsapp.svg" alt="What's App"></a>
+        </div>
+        <div class="right">
+            <p>WDD231 Class Project <br>David Jukes <br><span id="currentyear"> </span> McKinney Chamber of Commerce<br>
+                <span id="lastModified"></span>
+            </p>
+
+        </div>
+    </footer>
 
 </body>
 
