@@ -12,8 +12,8 @@ const lon = '-96.6153';
 const units = 'imperial';
 const key = '18fee8773bf49897569e2f795ea56213';
 const cnt = '24';
-const urlCurrent = `http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=${units}&APPID=${key}`;
-const urlForecast = `http://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&units=${units}&cnt=${cnt}&APPID=${key}`;
+const urlCurrent = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=${units}&APPID=${key}`;
+const urlForecast = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&units=${units}&cnt=${cnt}&APPID=${key}`;
 
 async function apiFetch(url) {
     try {
