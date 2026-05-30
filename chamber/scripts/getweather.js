@@ -1,14 +1,5 @@
 // select HTML elements in the document
-const currentTemp = document.querySelector('#currentweather');
-const weatherIcon = document.querySelector('#weather-icon');
-
-const curTemp = document.querySelector('#ctemp');
-const curDesc = document.querySelector('#cdesc');
-const highTemp = document.querySelector('#hight');
-const lowTemp = document.querySelector('#lowt');
-const humidity = document.querySelector('#hum');
-const sunRise = document.querySelector('#srise');
-const sunSet = document.querySelector('#sset');
+const currentTemp = document.querySelector('#currentweather'); //div
 
 const todayFC = document.querySelector('#todayfc');
 const tomorrowFC = document.querySelector('#tomorrowfc');
@@ -48,22 +39,63 @@ function displayResults(data) {
     // currentTemp.innerHTML = `${data.main.temp}&deg;F`;
 
     //pull data points out of json
+
+    //weather icon
+    let weatherIcon = document.createElement('img'); 
     let iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
     let desc = data.weather[0].description;
+    weatherIcon.setAttribute('id', 'weather-icon');
     weatherIcon.setAttribute('src', iconsrc);
     weatherIcon.setAttribute('alt', desc);
+    
+    //paragraph to host text
+    let weatherText = document.createElement('p');
 
-    curTemp.innerHTML = data.main.temp;
-    curDesc.innerHTML = desc;
-    highTemp.innerHTML = data.main.temp_max;
-    lowTemp.innerHTML = data.main.temp_min;
-    humidity.innerHTML = data.main.humidity;
+    //current temp text
+    let curTemp = document.createElement('span');
+    curTemp.setAttribute('id', 'ctemp');
+    curTemp.innerHTML = `${data.main.temp} &deg;F<br>`;
+    weatherText.appendChild(curTemp);
 
+    //current condition description    
+    let curDesc = document.createElement('span');
+    curDesc.setAttribute('id', 'cdesc');
+     curDesc.innerHTML = `${desc}<br>`;
+    weatherText.appendChild(curDesc);
+
+    let highTemp = document.createElement('span');
+    highTemp.setAttribute('id', 'hight');
+    highTemp.innerHTML = `High: ${data.main.temp_max}&deg;<br>`;
+    weatherText.appendChild(highTemp);
+
+    let lowTemp = document.createElement('span');
+    lowTemp.setAttribute('id', 'lowt');
+    //Low: <span id="lowt">54</span>&deg;<br>
+    lowTemp.innerHTML = `Low: ${data.main.temp_min}&deg;<br>`;
+    weatherText.appendChild(lowTemp);
+
+    let humidity = document.createElement('span');
+    humidity.setAttribute('id', 'hum');
+    //Humidity: <span id="hum">34</span>%<br>
+    humidity.innerHTML = `Humidity: ${data.main.humidity}%<br>`;
+    weatherText.appendChild(humidity);
+
+    let sunRise = document.createElement('span');
     let srise = new Date(data.sys.sunrise * 1000);
-    sunRise.innerHTML = srise.toLocaleTimeString();
-    let sset = new Date(data.sys.sunset * 1000);
-    sunSet.innerHTML = sset.toLocaleTimeString();
+    sunRise.setAttribute('id', 'srise');
+    //Sunrise: <span id="srise"></span><br>
+    sunRise.innerHTML = `Sunrise: ${srise.toLocaleTimeString()}<br>`;
+    weatherText.appendChild(sunRise);
 
+    let sunSet = document.createElement('span');
+    let sset = new Date(data.sys.sunset * 1000);
+    sunSet.setAttribute('id', 'sset');
+    //Sunset:<span id="sset"></span>
+    sunSet.innerHTML = `Sunset: ${sset.toLocaleTimeString()}`;
+    weatherText.appendChild(sunSet);
+   
+    currentTemp.appendChild(weatherIcon);
+    currentTemp.appendChild(weatherText);
 }
 
 function displayForecast(data) {
