@@ -124,15 +124,13 @@ function displayForecast(data) {
                 tempnext = item.main.temp
             }
         }
-
-
-    });
+    }); // end for each
 
     todayFC.innerHTML = temptoday;
 
         tomorrowFC.innerHTML = ` ${days[dowtomorrow]}: ${temptomorow}`;
     nextFC.innerHTML = ` ${days[downext]}: ${tempnext}`;
-}
+} //end displayForecast
 
 async function fetchForecastAPI() {
     try {
