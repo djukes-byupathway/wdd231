@@ -4,9 +4,7 @@ const csebutton = document.querySelector('#cse-btn');
 const wddbutton = document.querySelector('#wdd-btn');
 const courseContainer = document.querySelector('#crs-container');
 const crssummary = document.querySelector('#crs-sum');
-
-
-
+const courseDetails = document.querySelector('#course-deets');
 
 
 // courses array
@@ -118,20 +116,41 @@ function addCoursesToPage(courses) {
         var newCard = document.createElement('div');
         //add the correct class name(s)
         newCard.classList.add("card");
-        if (newCourse.completed) { 
+        if (newCourse.completed) {
             newCard.classList.add("complete");
-        } 
-       
+        }
+
         //populate card
         newCard.innerHTML = `${newCourse.subject} ${newCourse.number}`;
+
+
         //add card to container
         courseContainer.appendChild(newCard);
+        newCard.addEventListener('click', () => {
+            displayCourseDetails(newCourse);
+        });
         // update counter with credits
         crCtr += newCourse.credits;
     }
 
     // update the summary info for total credits
     crssummary.innerHTML = `The total credits for the course(s) listed above is ${crCtr}`;
-}
+};
 
-;
+function displayCourseDetails(course) {
+    courseDetails.innerHTML = '';
+    courseDetails.innerHTML = `
+    <button id="closeModal">❌</button>
+    <h2>${course.subject} ${course.number}</h2>
+    <h3>${course.title}</h3>
+    <p><strong>Credits</strong>: ${course.credits}</p>
+    <p><strong>Certificate</strong>: ${course.certificate}</p>
+    <p>${course.description}</p>
+    <p><strong>Technologies</strong>: ${course.technology.join(', ')}</p>
+  `;
+    courseDetails.showModal();
+
+    closeModal.addEventListener("click", () => {
+        courseDetails.close();
+    });
+}

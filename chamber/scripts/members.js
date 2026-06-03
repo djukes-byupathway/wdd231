@@ -53,12 +53,12 @@ const displayMembers = (members) => {
         company.innerHTML = member.company;
         //
         address.innerHTML = txtAddress;
-        phone.innerHTML = txtPhone
+        phone.innerHTML = txtPhone;
 
         web.setAttribute('href', `${txtWebsite}`);
         web.textContent = txtWebsite;
 
-    
+
         //
         card.appendChild(logo);
         card.appendChild(company);

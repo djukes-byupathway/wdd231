@@ -41,13 +41,13 @@ function displayResults(data) {
     //pull data points out of json
 
     //weather icon
-    let weatherIcon = document.createElement('img'); 
+    let weatherIcon = document.createElement('img');
     let iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
     let desc = data.weather[0].description;
     weatherIcon.setAttribute('id', 'weather-icon');
     weatherIcon.setAttribute('src', iconsrc);
     weatherIcon.setAttribute('alt', desc);
-    
+
     //paragraph to host text
     let weatherText = document.createElement('p');
 
@@ -60,7 +60,7 @@ function displayResults(data) {
     //current condition description    
     let curDesc = document.createElement('span');
     curDesc.setAttribute('id', 'cdesc');
-     curDesc.innerHTML = `${desc}<br>`;
+    curDesc.innerHTML = `${desc}<br>`;
     weatherText.appendChild(curDesc);
 
     let highTemp = document.createElement('span');
@@ -93,7 +93,7 @@ function displayResults(data) {
     //Sunset:<span id="sset"></span>
     sunSet.innerHTML = `Sunset: ${sset.toLocaleTimeString()}`;
     weatherText.appendChild(sunSet);
-   
+
     currentTemp.appendChild(weatherIcon);
     currentTemp.appendChild(weatherText);
 }
@@ -103,32 +103,44 @@ function displayForecast(data) {
     const today = new Date();
     let dowtoday = today.getDay();
     let temptoday = -100;
+
     let dowtomorrow = dowtoday + 1;
+    if (dowtomorrow > 6) {
+        dowtomorrow = dowtomorrow - 6;
+    }
     let temptomorow = -100;
     let downext = dowtoday + 2;
+    if ( downext  > 6) {
+        downext = downext - 6;
+    }
     let tempnext = -100;
 
+    console.log(dowtomorrow);
+
     data.list.forEach(item => {
+        //console.log(new Date(item.dt * 1000).getDay());
+        //console.log(new Date(item.dt * 1000).toLocaleTimeString());
+
         if (new Date(item.dt * 1000).getDay() == dowtoday) {
-            if (item.main.temp > temptoday ) {
-                temptoday = item.main.temp
+            if (item.main.temp > temptoday) {
+                temptoday = item.main.temp;
             }
 
         } else if (new Date(item.dt * 1000).getDay() == dowtomorrow) {
             if (item.main.temp > temptomorow) {
-                temptomorow = item.main.temp
+                temptomorow = item.main.temp;
             }
 
         } else if (new Date(item.dt * 1000).getDay() == downext) {
             if (item.main.temp > tempnext) {
-                tempnext = item.main.temp
+                tempnext = item.main.temp;
             }
         }
     }); // end for each
 
     todayFC.innerHTML = temptoday;
 
-        tomorrowFC.innerHTML = ` ${days[dowtomorrow]}: ${temptomorow}`;
+    tomorrowFC.innerHTML = ` ${days[dowtomorrow]}: ${temptomorow}`;
     nextFC.innerHTML = ` ${days[downext]}: ${tempnext}`;
 } //end displayForecast
 

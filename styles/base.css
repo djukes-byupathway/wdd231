@@ -278,6 +278,7 @@ footer {
     border: solid 1px var(--neutral-200);
     border-radius: .5rem;
 }
+
 /* help!!! */
 .card {
     background-color: var(--neutral-100);
@@ -290,4 +291,95 @@ footer {
 .complete {
     background-color: var(--accent-400);
     color: var(--accent-0);
+}
+
+dialog {
+    border: 1px solid rgb(0 0 0 / 10%);
+    border-radius: 5px;
+    padding: 1rem;
+    background-color: #fff;
+    box-shadow: 0 0 3rem #777;
+    width: 90%;
+    max-width: 600px;
+}
+
+::backdrop {
+    background-color: rgb(0 0 0 / 50%);
+}
+
+dialog button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: .5rem 1rem;
+    border: 1px solid rgb(0 0 0 / 10%);
+}
+
+#loader {
+    margin: 2rem;
+    width: 50px;
+    height: 50px;
+    border: 5px solid transparent;
+    border-color: #999 transparent #999 transparent;
+    border-radius: 50px;
+    animation: spin 1.5s linear infinite;
+    box-shadow: 0 0 1rem rgb(0 0 255 / 40%);
+    background-color: var(--neutral-100);
+}
+
+#loader::after {
+    content: '⚙️';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+
+    50% {
+        transform: translate(-50%, -50%) scale(1.25);
+    }
+}
+
+.loader-t {
+    margin: 2rem;
+    width: 50px;
+    height: 50px;
+    border: 5px solid transparent;
+    border-color: #999 transparent #999 transparent;
+    border-radius: 50px;
+    box-shadow: 0 0 1rem rgb(0 0 255 / 40%);
+    background-color: var(--neutral-100);
+    transition: spin 1.5s linear infinite;
+}
+
+.loader-t::after {
+    content: '⚙️';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 1.5s ease-in-out;
+}
+
+.loader-t:hover {
+    transform: rotate(360deg);
+}
+
+.loader-t:hover::after {
+    transform: translate(-50%, -50%) scale(1.5);
 }
