@@ -2,7 +2,7 @@
 width: 90%;
 }
 
-#mydialog div {
+#memberLevel div {
     display: grid;
     grid-template-columns: auto 44px;
     background-color: #ddd;
@@ -11,13 +11,13 @@ width: 90%;
 
 }
 
-#mydialog h2 {
+#memberLevel h2 {
     margin: 0;
     color: blue;
 
 }
 
-#mydialog button {
+#memberLevel button {
     margin: 0;
     border: 1px solid rgba(0,0,0,0.3);
     border-radius: 5px;
@@ -25,7 +25,7 @@ width: 90%;
 
 }
 
-#mydialog p {
+#memberLevel p {
     padding: 10px;
     color: slategray;
 }
