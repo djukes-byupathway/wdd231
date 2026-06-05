@@ -13,6 +13,7 @@
     <!-- external Scripts -->
     <script defer src="scripts/getdates.js"></script>
     <script defer src="scripts/navigation.js"></script>
+    <script defer src="scripts/memberlevel.js"></script>
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -48,8 +49,8 @@
 
     <nav id="nav-bar" class="navigation">
         <ul>
-            <li><a href="#">Home</a></li>
-            <li ><a href="directory.html">Directory</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="directory.html">Directory</a></li>
             <li class="current"><a href="join.html">Join</a></li>
             <li><a href="discover.html">Discover</a></li>
         </ul>
@@ -57,6 +58,61 @@
 
     <main>
         <h1>Join Now</h1>
+        <div class="join-main">
+            <div class="join-form">
+                <h2>Input your information</h2>
+                <form method="GET" action="thanks.html" class="joinNow">
+                    <label>First Name <input type="text" name="first" required autocomplete="given-name"
+                            title="Your First Name"></label>
+                    <label>Last Name <input type="text" name="last" required autocomplete="family-name"
+                            title="Your Last Name"></label>
+                    <label>Title <input type="text" pattern="^[a-zA-Z\s]{7,}$" name="title"
+                            autocomplete="organization-title" title="Your Organizational Title">
+                    </label>
+                    <label>Email <input type="email" name="email" required placeholder="john89@gmail.com"
+                            title="Your Email" autocomplete="email"></label>
+                    <label>Cell Phone <input type="tel" name="phone" autocomplete="tel"
+                            title="A Phone Number with dashes" placeholder="987-555-1234"></label>
+                    <label>Business/Organization Name <input type="text" name="org" required
+                            title="Your Business or Organization Name " autocomplete="organization"></label>
+                    <label for="desc">Business/Organization Description<br>
+                        <textarea name="desc" id="desc" rows="5"></textarea>
+                    </label>
+
+                    <h3>Select Membership Level</h3>
+                    <label><input type="radio" name="level" value="np" checked> Non-profit</label>
+                    <label><input type="radio" name="level" value="bronze"> Bronze</label>
+                    <label><input type="radio" name="level" value="silver"> Silver</label>
+                    <label><input type="radio" name="level" value="gold"> Gold</label>
+
+
+                    <input hidden type="timestamp" name="ts" id="ts">
+
+                    <input type="submit" value="Apply for Membership">
+                </form>
+            </div>
+
+            <div class="cardcontainer">
+                <h2>Membership Levels</h2>
+                <!-- <div class="card">
+                    <h3> Non Profit Membership </h3>
+                    <button>Learn More</button>
+                </div>
+                <div class="card">
+                    <h2> Bronze Membership </h2>
+                    <button>Learn More</button>
+                </div>
+                <div class="card">
+                    <h2>Silver Membership </h2>
+                    <button>Learn More</button>
+                </div>
+                <div class="card">
+                    <h2>Gold Membership </h2>
+                    <button>Learn More</button>
+                </div> -->
+            </div>
+        </div>
+        <dialog id="memberLevel" class="memberLevel"></dialog>
         
     </main>
 

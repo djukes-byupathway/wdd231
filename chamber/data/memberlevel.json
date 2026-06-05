@@ -1,0 +1,60 @@
+{
+    "levels": [
+        {
+            "memberlevel": "0",
+            "name": "Non-Profit Membership",
+            "Price": "Free",
+            "benefits": [
+                "$50 Annual Marketing Credit",
+                "2 Digital Ads",
+                "Ribbon Cutting Ceremony",
+                "Member mailing list",
+                "Participate in New Resident Welcome Bags ",
+                "2 tickets for State of the Chamber, State of Education, CEO Series or Development Updates"
+            ]
+        },
+        {
+            "memberlevel": "1",
+            "Name": "Bronze Membership",
+            "Price": "2500",
+            "benefits": [
+                "$50 Annual Marketing Credit",
+                "2 Digital Ads",
+                "Ribbon Cutting Ceremony",
+                "Member mailing list",
+                "Participate in New Resident Welcome Bags ",
+                "2 tickets for State of the Chamber, State of Education, CEO Series or Development Updates"
+            ]
+        },
+        {
+            "memberlevel": "2",
+            "Name": "Silver Membership",
+            "price": "5000",
+            "benefits": [
+                "Includes all Non-Profit and Bronze Benefits",
+                "$250 Annual Marketing Credit",
+                "4 Digital Ads",
+                "6 Tickets to Quarterly Chamber Luncheon(s)",
+                "Corporate Placement in Online Director",
+                "Recognition at Major Chamber Events",
+                "Logo Advertising in Community and Relocation Guide",
+                "Customized Chamber of McKinney Member Plaque",
+                "VIP Ribbon Cutting"
+            ]
+        },
+        {
+            "memberlevel": "3",
+            "Name": "Gold Membership",
+            "Price": "10000",
+            "benefits": [
+                "Includes all Non-Profit, Bronze, & Silver Partner Benefits",
+                "Advertising (Logo) in monthly e-newsletter",
+                "5 Digital Ads",
+                "Photo/Business in Community and Relocation Guide",
+                "5 Total Memberships across Young Professionals, Women’s Alliance of McKinney, and Senior Service Alliance Programs",
+                "Tickets to Annual Awards Celebration",
+                "4 Tickets to McKinney ISD New Teacher Welcome Breakfast"
+            ]
+        }
+    ]
+}

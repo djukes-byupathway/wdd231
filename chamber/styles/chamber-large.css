@@ -63,5 +63,8 @@
     .hero span {
         font-size: 2rem;
     }
-
+.join-main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
 }
