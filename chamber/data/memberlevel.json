@@ -3,7 +3,7 @@
         {
             "memberlevel": "0",
             "name": "Non-Profit Membership",
-            "Price": "Free",
+            "price": "Free",
             "benefits": [
                 "$50 Annual Marketing Credit",
                 "2 Digital Ads",
@@ -15,8 +15,8 @@
         },
         {
             "memberlevel": "1",
-            "Name": "Bronze Membership",
-            "Price": "2500",
+            "name": "Bronze Membership",
+            "price": "2500",
             "benefits": [
                 "$50 Annual Marketing Credit",
                 "2 Digital Ads",
@@ -28,7 +28,7 @@
         },
         {
             "memberlevel": "2",
-            "Name": "Silver Membership",
+            "name": "Silver Membership",
             "price": "5000",
             "benefits": [
                 "Includes all Non-Profit and Bronze Benefits",
@@ -44,8 +44,8 @@
         },
         {
             "memberlevel": "3",
-            "Name": "Gold Membership",
-            "Price": "10000",
+            "name": "Gold Membership",
+            "price": "10000",
             "benefits": [
                 "Includes all Non-Profit, Bronze, & Silver Partner Benefits",
                 "Advertising (Logo) in monthly e-newsletter",

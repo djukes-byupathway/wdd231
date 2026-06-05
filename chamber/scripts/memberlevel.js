@@ -1,7 +1,6 @@
 
 const url = 'https://djukes-byupathway.github.io/wdd231/chamber/data/memberlevel.json';
 
-
 const cards = document.querySelector('#cardcontainer');
 
 async function getMemberLevels() {
@@ -25,14 +24,16 @@ const displayLevels = (levels) => {
         const card = document.createElement('div');
         card.classList.add('card');
 
-        const cardHeading = document.createElement('h3');
+        let cardHeading = document.createElement('h3');
         cardHeading.innerHTML = level.name;
-        card.appendChild(cardHeading);
-        const btnDetails = document.createElement('button');
+
+        let btnDetails = document.createElement('button');
+        btnDetails.textContent = 'View Details'
         btnDetails.addEventListener('click', () => showDialog(level));
+        
+        console.log(level.name);
+        card.appendChild(cardHeading);
         card.appendChild(btnDetails);
-  
-        //
         cards.appendChild(card);
     });
 } // end display members
