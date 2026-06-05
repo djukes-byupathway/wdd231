@@ -9,6 +9,7 @@ const myTitle = document.querySelector("#myTitle");
 const priceP = document.querySelector("#priceP");
 const beneTitle = document.querySelector("#memberLevel h3");
 const beneList = document.querySelector("#memberLevel ul");
+const requested = document.getElementById("ts");
 
 
 async function getMemberLevels() {
@@ -19,7 +20,8 @@ async function getMemberLevels() {
 } // end member data
 
 getMemberLevels();
-mydialog.close();
+requested.value = Date.now();
+
 
 myClose.addEventListener("click", () => mydialog.close());
 
