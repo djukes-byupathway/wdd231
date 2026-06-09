@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Vault of Jukes - Site plan document that maps out what will be built">
+    <meta name="author" content="David Jukes">
+
+    <title>Vault of Jukes Site Plan</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- external Scripts -->
+    <script defer src="scripts/getdates.js"></script>
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto&display=swap"
+        rel="stylesheet">
+
+    <!-- style sheets -->
+    <link href="styles/normalize.css" rel="stylesheet">
+    <link href="styles/small.css" rel="stylesheet">
+    <link href="styles/medium.css" rel="stylesheet">
+    <link href="styles/large.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <img src="images/d6-die.svg" alt="dice logo" width="1" height="1">
+        <span>Vault of Jukes</span>
+        <button id="ham-btn" class="hamburger" aria-label="Hamburger Button"></button>
+    </header>
+
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li class="current"><a href="index.html">Home</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="join.html">Join</a></li>
+            <li><a href="discover.html">Discover</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Site Plan</h1>
+        <div class="content">
+            <section class="namesect">
+                <h2>1. Site Name</h2>
+                <h3>Vault of Jukes</h3>
+                <p>This name was selected to make it personal to the two founders, brothers who wanted to make
+                    something. Also it evokes thoughts of treasure, protected and safe, but waiting to be plundered by
+                    daring adventurers.</p>
+            </section>
+            <section class="purposesect">
+                <h2>2. Site Purpose</h2>
+                <p>This site is intended to be the home page for a budding collaboration of two brothers aiming to
+                    develop and provide content to fellow gamers, specifically around traditional Role Playing Games
+                    (RPGs) and table top miniature games.</p>
+            </section>
+            <section class="">
+                <h2>3. Scenarios</h2>
+                <ul>
+                    <li>what is Vault of Jukes?</li>
+                    <li>how can i stay in the loop on what Vault of Jukes is working on?</li>
+                    <li>what products/services do you offer?</li>
+                    <li>who are you guys again?</li>
+                </ul>
+            </section>
+
+
+            <section class="colorsection">
+                <h2>4. Color Scheme</h2>
+
+                <div class="colordiv">
+                    <h3>Primary Colors</h3>
+                    <div class="color" id="pri0">#0f1d24</div>
+                    <span> --primary-0</span>
+                    <div class="color" id="pri100">#0f1d24</div>
+                    <span> --primary-100</span>
+                    <div class="color" id="pri200">#264d5e</div>
+                    <span> --primary-200</span>
+                    <div class="color" id="pri300">#4487a7</div>
+                    <span> --primary-300</span>
+                    <div class="color" id="pri400">#84b6cd</div>
+                    <span> --primary-400</span>
+                </div>
+                <div class="colordiv">
+                    <h3>Secondary Colors </h3>
+                    <div class="color" id="sec0">#0f1324</div>
+                    <span> --secondary-0</span>
+                    <div class="color" id="sec100">#0f1d24</div>
+                    <span> --secondary-100</span>
+                    <div class="color" id="sec200">#264d5e</div>
+                    <span> --secondary-200</span>
+                    <div class="color" id="sec300">#4487a7</div>
+                    <span> --secondary-300</span>
+                    <div class="color" id="sec400">#84b6cd</div>
+                    <span> --secondary-400</span>
+                </div>
+                <div class="colordiv">
+                    <h3>Accent Colors</h3>
+                    <div class="color" id="acc0">#0f1324</div>
+                    <span> --accent-0</span>
+                    <div class="color" id="acc100">#0f1d24</div>
+                    <span> --accent-100</span>
+                    <div class="color" id="acc200">#264d5e</div>
+                    <span> --accent-200</span>
+                    <div class="color" id="acc300">#4487a7</div>
+                    <span> --accent-300</span>
+                    <div class="color" id="acc400">#84b6cd</div>
+                    <span> --accent-400</span>
+                </div>
+                <div class="colordiv">
+                    <h3>Neutral Colors</h3>
+                    <div class="color" id="neu0">#0f1324</div>
+                    <span> --neutral-0</span>
+                    <div class="color" id="neu100">#0f1d24</div>
+                    <span> --neutral-100</span>
+                    <div class="color" id="neu200">#264d5e</div>
+                    <span> --neutral-200</span>
+                    <div class="color" id="neu300">#4487a7</div>
+                    <span> --neutral-300</span>
+                    <div class="color" id="neu400">#84b6cd</div>
+                    <span> --neutral-400</span>
+                </div>
+            </section>
+            <section class="">
+                <h2>4. Typography</h2>
+                <p>I will be using Lato family of Google Fonts for almost all of the text on the website.</p>
+            </section>
+            <section class="wfholder">
+                <h2>5. Wireframe</h2>
+                <p>the wireframes are focused on mobile first development. Full page width designs will come after
+                    mobile pages are good./ Only main pages are wireframed.</p>
+                <div>
+                    <h3>home page</h3><img src="images/homepage-wireframe.webp" alt="home page wireframe" width="600">
+                </div>
+
+                <div>
+                    <h3>Product Page</h3><img src="images/produc-wf.webp" alt="vault of jukes product page wireframe"
+                        width="600">
+                </div>
+                <div>
+                    <h3>About Us Page</h3>
+                    <img src="images/aboutus-wf.webp" alt="Vault About Us page" width="600">
+                </div>
+            </section>
+
+
+
+
+
+
+
+
+        </div>
+
+    </main>
+    <footer id="foot">
+        <div class="left">
+            <h2> Vault of Jukes</h2>
+            <p>McKinney, TX 75070</p>
+            <p>805.878.7171 </p>
+        </div>
+        <div class="footer-links">
+            <a href="https://github.com/djukes-byupathway"><img src="images/linkedin.svg" alt="Linked In"></a>
+            <a href="https://www.facebook.com/david.a.jukes"><img src="images/facebook.svg" alt="Facebook"></a>
+            <a href="https://web.whatsapp.com"><img src="images/whatsapp.svg" alt="What's App"></a>
+        </div>
+        <div class="right">
+            <p>Vault of Jukes <br>David Jukes <br><span id="currentyear"> </span> <br>
+                <span id="lastModified"></span>
+            </p>
+            <a href="#">Site Plan</a>
+
+        </div>
+    </footer>
+</body>
+
+</html>
