@@ -270,6 +270,7 @@ footer h2 {
 #pri400 {
     background-color: var(--primary-400);
     border-radius: 0 0 0 .6rem;
+    color: var(--primary-0);
 }
 
 #sec0 {
@@ -291,6 +292,7 @@ footer h2 {
 #sec400 {
     background-color: var(--secondary-400);
     border-radius: 0 0 0 .6rem;
+    color: var(--secondary-0);
 }
 
 #acc0 {
@@ -307,11 +309,13 @@ footer h2 {
 
 #acc300 {
     background-color: var(--accent-300);
+color: var(--accent-0);
 }
 
 #acc400 {
     background-color: var(--accent-400);
     border-radius: 0 0 0 .6rem;
+    color: var(--accent-0);
 }
 
 #neu0 {
@@ -328,11 +332,14 @@ footer h2 {
 
 #neu300 {
     background-color: var(--neutral-300);
+    border: 1px solid ;
+    color: var(--primary-0);
 }
 
 #neu400 {
     background-color: var(--neutral-400);
     border-radius: 0 0 0 .6rem;
+    color: var(--primary-0);
 }
 
 #wfholder {
