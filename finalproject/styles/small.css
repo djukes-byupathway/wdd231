@@ -123,12 +123,8 @@ header span {
     color: var(--primary-0);
 }
 
-.navigation li.current {
-
-    a {
-        text-decoration: underline;
-    }
-
+li.current a {
+    text-decoration: underline;
 }
 
 .navigation a:hover {
