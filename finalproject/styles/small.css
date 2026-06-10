@@ -265,6 +265,7 @@ footer h2 {
 
 #pri300 {
     background-color: var(--primary-300);
+    color: black;
 }
 
 #pri400 {
@@ -328,6 +329,7 @@ color: var(--accent-0);
 
 #neu200 {
     background-color: var(--neutral-200);
+    color: white;
 }
 
 #neu300 {
