@@ -53,7 +53,7 @@ export const places = [
         "address": "305 E. Virginia St., Suite 103, McKinney, TX 75069",
         "cost": "$12 per person for all-day free play; children age 3 and under are free with a paid adult.",
         "description": "A retro and modern arcade featuring more than 100 arcade and pinball machines set to free play, along with food, desserts, craft beer, and cocktails.",
-        "image": "arcarde92.webp"
+        "image": "arcade92.webp"
     },
     {
         "name": "McKinney Performing Arts Center",

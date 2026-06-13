@@ -1,0 +1,88 @@
+@media only screen and (min-width:38rem) {
+
+    header,
+    nav,
+    main,
+    footer {
+
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    header {
+        grid-template-columns: 44px auto;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .navigation {
+        display: block;
+        border-bottom: solid 1px #ddd;
+    }
+
+    .navigation ul {
+        display: flex;
+    }
+
+    .navigation a {
+        border: none;
+    }
+
+    .content {
+        display: grid;
+        grid: 5rem 1fr / 50% 25% 25%;
+        gap: .5rem;
+    }
+
+    .content h1 {
+        grid-column: 1 /4;
+    }
+
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .left {
+        grid-column: 1 / 2;
+    }
+
+    .footer-links {
+        grid-column: 2 / 3;
+    }
+
+    .right {
+        grid-column: 3 / 4;
+    }
+
+    .hero {
+        max-width: 1200px;
+    }
+
+    .hero span {
+        font-size: 2rem;
+    }
+
+    .join-main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+    #places div {
+        display: grid;
+        grid-template-areas:
+            "photo name"
+            "photo desc"
+            "photo location";
+
+    }
+
+    #places div img {
+        width: 300px;
+    }
+
+
+}

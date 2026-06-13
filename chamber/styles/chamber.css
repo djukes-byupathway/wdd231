@@ -467,26 +467,38 @@ input:-webkit-autofill {
     background-color: rgba(255, 255, 255, 0.75);
 }
 
-#places {
+#places div {
     margin: 1rem 8px;
     border: 1px solid #999;
     background-color: #eee;
     border-radius: 8px;
+    overflow: hidden;
+
+    display: grid;
+    grid-template-areas:
+    "name"
+"photo"
+    "desc"
+    "location";
 
 }
 
 #places h2 {
     margin: 1rem 10px;
+    grid-area: name;
 }
 
 #places div img {
     width: 100%;
+    grid-area: photo;
 }
 
 #places div p {
     margin: 1rem 10px;
+    grid-area: desc;
 }
 
-#places h2 {
+#places div address {
     margin: 1rem 10px;
+    grid-area: location;
 }

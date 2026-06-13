@@ -1,5 +1,5 @@
 import { places } from '../data/discovery.mjs'
-console.log(places);
+//console.log(places);
 
 const placesContainer = document.querySelector("#places");
 displayItems(places);
@@ -7,7 +7,7 @@ displayItems(places);
 function displayItems(places) {
 
     places.forEach(element => {
-        console.log(element);
+       // console.log(element);
         // card element
         const theCard = document.createElement('div');
         //photo element
