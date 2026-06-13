@@ -122,12 +122,8 @@ header span {
     color: var(--primary-0);
 }
 
-.navigation li.current {
-
-    a {
-        text-decoration: underline;
-    }
-
+.navigation li.current a {
+    text-decoration: underline;
 }
 
 .navigation a:hover {
@@ -240,7 +236,6 @@ footer h2 {
 }
 
 .spot a {
-    /* font-family: Arial, sans-serif; */
     font-size: 0.85rem;
     color: var(--primary-0);
 }
@@ -384,10 +379,6 @@ form {
     }
 }
 
-input:-webkit-autofill {
-    -webkit-text-fill-color: #3D405B;
-}
-
 .cardcontainer {
     margin: 1rem 2%;
 }
@@ -476,10 +467,10 @@ input:-webkit-autofill {
 
     display: grid;
     grid-template-areas:
-    "name"
-"photo"
-    "desc"
-    "location";
+        "name"
+        "photo"
+        "desc"
+        "location";
 
 }
 
