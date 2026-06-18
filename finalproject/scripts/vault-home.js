@@ -26,7 +26,7 @@ async function fetchNames(event) {
     console.log(formData.get('country'));
     console.log(formData.get('numNames'));
 
-    const urlName = `http://api.parser.name/?api_key=14d2dccb4e74d7440696f5d8451b1f23&endpoint=generate&gender=${formData.get('gender')}&results=${formData.get('numNames')}&country_code=${formData.get('country')}`;
+    const urlName = `https://api.parser.name/?api_key=14d2dccb4e74d7440696f5d8451b1f23&endpoint=generate&gender=${formData.get('gender')}&results=${formData.get('numNames')}&country_code=${formData.get('country')}`;
     console.log(urlName);
 
     try {
