@@ -2,8 +2,6 @@
 const currentTemp = document.querySelector('#currentweather'); //div
 
 const todayFC = document.querySelector('#todayfc');
-const tomorrowFC = document.querySelector('#tomorrowfc');
-const nextFC = document.querySelector('#nextfc');
 
 const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 
@@ -13,7 +11,6 @@ const units = 'imperial';
 const key = '18fee8773bf49897569e2f795ea56213';
 const cnt = '24';
 const urlCurrent = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=${units}&APPID=${key}`;
-const urlForecast = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&units=${units}&cnt=${cnt}&APPID=${key}`;
 
 async function apiFetch(url) {
     try {

@@ -713,3 +713,7 @@ form h2 {
 #wfholder {
     display: block;
 }
+.left img{
+    width: 5rem;
+    height: 5rem;
+}
