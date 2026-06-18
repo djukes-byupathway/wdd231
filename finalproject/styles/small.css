@@ -411,12 +411,10 @@ footer h2 {
 #games a {
     margin: 1rem 10px;
     grid-area: website;
-    display: none;
 
 }
 
 #games p {
-    display: none;
     margin: 1rem 10px;
     grid-area: desc;
 
@@ -425,12 +423,10 @@ footer h2 {
 .publisher {
     display: none;
     margin: 1rem 10px;
-    grid-area: publisher;
 
 }
 
 .gametype {
-    display: none;
     margin: 1rem 10px;
     grid-area: type;
     font-style: italic;

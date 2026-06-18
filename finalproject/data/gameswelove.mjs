@@ -61,7 +61,7 @@ const games = [
         imgurl: "warhammer40k.webp",
         type: "Table Top War Game",
         publisher: "Games Workshop",
-        description: "Grimdark setting in the far future. Humanity is in perpetual war."
+        description: "Skirmish Combat in the 41st Millennium"
     },
     {
         name: "Warhammer Old World",
@@ -94,7 +94,31 @@ const games = [
         type: "Board Game",
         publisher: "Milton Bradley / Avalon Hill",
         description: "WW2 Boardgame."
-    }
+    },
+    {
+        name: "Kill Team",
+        website: "https://www.warhammer.com/killteam",
+        imgurl: "killteam.webp",
+        type: "Table Top War Game",
+        publisher: "Games Workshop",
+        description: "Grimdark setting in the far future. Humanity is in perpetual war."
+    },
+    {
+        name: "Settler of Catan",
+        website: "https://www.catan.com/",
+        imgurl: "catan.webp",
+        type: "Board Game",
+        publisher: "CATAN",
+        description: "Picture yourself in the era of discoveries: after a long voyage of great deprivation, your ships have finally reached the coast of an uncharted island. Its name shall be Catan!"
+    },
+    {
+        name: "Malediction",
+        website: "https://malediction.gg/",
+        imgurl: "malediction.webp",
+        type: "Miniature Card Game",
+        publisher: "Loot Studios",
+        description: "Malediction is the world's first 3D-printable Miniature Card Game."
+    },
 ]
 
 function displayGames(games) {

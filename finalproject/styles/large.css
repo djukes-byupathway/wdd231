@@ -46,8 +46,15 @@
     display: grid;
     grid-column: 1 / 6;
 }
-
-
+#games a {
+    display: none;
+}
+#games p {
+    display: none;
+}
+#games span {
+    display: none;
+}
 /*----------- HL Cards from Index Page --------------*/
 #hl-container {
     display: grid;
