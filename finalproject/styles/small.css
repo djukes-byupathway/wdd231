@@ -213,10 +213,8 @@ footer h2 {
     position: relative;
     max-height: 70vh;
     min-height: 23rem;
-    background-image: 'images/vault-small.webp';
     background-size: cover;
     background-position: center;
-    display: relative;
     align-items: center;
     justify-content: center;
     overflow: hidden;
@@ -561,10 +559,6 @@ background-color: var(--primary-0);
     color: var(--neutral-400);
     margin: 0;
     padding: .5rem;
-}
-
-form {
-    margin: 1rem 2%;
 }
 
 form h2 {

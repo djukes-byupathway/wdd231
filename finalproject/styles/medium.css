@@ -1,7 +1,7 @@
 @media only screen and (min-width:48rem) {
-    
+
     /*----------- navigation --------------*/
-    
+
     .navigation {
         display: block;
         border-bottom: solid 1px #ddd;
@@ -20,16 +20,10 @@
     }
 
 
-  /*----------- hero images --------------*/
+    /*----------- hero images --------------*/
 
-    .hero {
-        .hero {
-            background-image: 'images/vault-medium.webp';
-        }
 
-    }
-
-/*----------- Footer --------------*/
+    /*----------- Footer --------------*/
     footer {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -67,21 +61,22 @@
             "publisher publisher"
             "photo photo"
             "type type"
-                "website website"
-                "desc desc"
+            "website website"
+            "desc desc"
         ;
     }
-/*----------- Project Cards from Upcoming Projects Page --------------*/
-#projects div {
-    display: grid;
-    grid-template-areas:
-        "header header"
-        "systems desc"
-        "release desc"
-        "status desc"
 
-    ;
-}
+    /*----------- Project Cards from Upcoming Projects Page --------------*/
+    #projects div {
+        display: grid;
+        grid-template-areas:
+            "header header"
+            "systems desc"
+            "release desc"
+            "status desc"
+
+        ;
+    }
 
 
     /*----------- HL Cards from Index Page --------------*/
