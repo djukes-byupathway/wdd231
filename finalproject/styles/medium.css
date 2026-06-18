@@ -12,6 +12,12 @@
         border: none;
     }
 
+    .hero {
+        .hero {
+            background-image: 'images/vault-medium.webp';
+        }
+
+    }
 
     footer {
         display: grid;
@@ -30,9 +36,50 @@
         grid-column: 3 / 4;
     }
 
+
+
+
+    /*----------- Founders Cards from About Us Page --------------*/
+    #founders div {
+        display: grid;
+        grid-template-areas:
+            "header header"
+            "bio photo";
+    }
+
+
+    /*----------- Games Cards from About Us Page --------------*/
+    #games div {
+        display: grid;
+        grid-template-areas:
+            "header header"
+            "publisher publisher"
+            "photo photo"
+            "type type"
+            "website website"
+            "desc desc"
+        ;
+    }
+
+
+
+    /*----------- HL Cards from Index Page --------------*/
+    #hl-container div {
+        display: grid;
+        grid-template-areas:
+            "photo name"
+            "photo desc";
+
+    }
+
+    #hl-container img {
+        width: 300px;
+    }
+
+    /*----------- Color Section for Site Plan Page --------------*/
     .colorsection {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr ;
+        grid-template-columns: 1fr 1fr 1fr;
     }
 
     .colorsection h2 {

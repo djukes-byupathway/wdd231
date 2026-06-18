@@ -3,15 +3,16 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Business Directory - McKinney, TX Chamber of Commerce">
+    <meta name="description" content="Vault of Jukes - Home Page">
     <meta name="author" content="David Jukes">
 
-    <title>Prophets of the Church of Jesus Christ of Latter-day Saints</title>
+    <title>Vault of Jukes - Resources For Your Gaming Needs and Wants</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- external Scripts -->
     <script defer src="scripts/getdates.js"></script>
+    <script defer src="scripts/navigation.js"></script>
 
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -37,17 +38,58 @@
     <nav id="nav-bar" class="navigation">
         <ul>
             <li class="current"><a href="index.html">Home</a></li>
-            <li><a href="directory.html">Directory</a></li>
-            <li><a href="join.html">Join</a></li>
-            <li><a href="discover.html">Discover</a></li>
+            <li><a href="highlights.html">Highlights</a></li>
+            <li><a href="projects.html">Upcoming Projects</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
         </ul>
     </nav>
 
     <main>
-        <h1>Home Page</h1>
-        <div class="content">
- 
-        </div>
+
+        <section class="hero" id="hero">
+            
+                <h1>Vault of Jukes</h1>
+                <picture>
+                    <source srcset="images/vault-large.webp" media="(min-width:64rem)">
+                    <source srcset="images/vault-medium.webp" media="(min-width:35rem)">
+                    <img src="images/vault-small.webp" alt="Vault of Jukes " loading="lazy">
+                </picture>
+                <p>Home to amazing adventures, clever traps, tricks, and tools for game masters, and welcoming
+                    and loyal
+                    community.</p>
+                <button>Signup for Newsletter</button>
+           
+        </section>
+
+
+        <section class="hl-container" id="hl-container">
+            <h2>What Are We About?</h2>
+            <div class="card hl-card">
+                <h3>Original Settings</h3>
+                <img src="images/colonial_ranger_crossbow.png" alt="Original Setting Ranger" loading="lazy">
+                <p>We create fantasy worlds filled with mystery and adventure, from the perpetual night of Dark World
+                     to the Jungles of Veilagh, to the magical destopian setting of Old Hexburg. 
+                </p>
+            </div>
+            <div class="card hl-card">
+                <h3>Innovative Mechanics</h3>
+                <img src="images/blue_dragon_wizard_greek.png" alt="Game Mechanics Wizard" loading="lazy">
+                <p>
+                    Doesn't everyone love house rules? We are digging into our vault of resources and plan to share
+                    the best of our home grown content as well as game mechanics that are pluggable into existing
+                    campaigns and settings.
+                </p>
+            </div>
+            <div class="card hl-card">
+                <h3>Collaborative Community</h3>
+                <img src="images/hexburg_sergent.png" alt="Collaboration Sergeant" loading="lazy">
+                <p>After spending years of gaming with our friends from high school and college, we are branching
+                    out and broadening our reach. We invite all of you to join in our adventures and will look for
+                    ways to share with you via multiple channels and mediums.
+                </p>
+            </div>
+
+        </section>
 
     </main>
     <footer id="foot">

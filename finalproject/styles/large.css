@@ -1,5 +1,14 @@
 @media only screen and (min-width:64rem) {
 
+
+
+.hero {
+        .hero {
+            background-image: 'images/vault-large.webp';
+        }
+
+    }
+/*----------- Color Section for Site Plan Page --------------*/
 .colorsection {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -9,16 +18,39 @@
     grid-column: 1 / 5;
 }
 
+/*----------- Founders Cards from About Us Page --------------*/
+#founders {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+#founders h2 {
+    display: grid;
+    grid-column: 1 / 4;
+}
+
+/*----------- Games Cards from About Us Page --------------*/
+#games {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+}
+#games h2 {
+    display: grid;
+    grid-column: 1 / 5;
+}
 
 
+/*----------- HL Cards from Index Page --------------*/
+#hl-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 
+}
 
-
-
-
-
-
-
-
+#hl-container h2 {
+    display: grid;
+    grid-column: 1 / 4;
+}
 
 } /* end media query */

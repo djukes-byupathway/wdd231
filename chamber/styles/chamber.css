@@ -417,7 +417,6 @@ form {
     animation-delay: 0.4s;
 }
 
-
 /* moves to final position */
 @keyframes fadeInUp {
     to {
