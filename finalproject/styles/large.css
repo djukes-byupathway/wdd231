@@ -18,6 +18,16 @@
     grid-column: 1 / 5;
 }
 
+
+/*----------- Project Cards from Upcoming Projects Page --------------*/
+#projects  {
+    display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+}
+#projects h2 {
+    display: grid;
+    grid-column: 1 / 4;
+}
 /*----------- Founders Cards from About Us Page --------------*/
 #founders {
     display: grid;
@@ -29,15 +39,17 @@
     grid-column: 1 / 4;
 }
 
+
+
 /*----------- Games Cards from About Us Page --------------*/
 #games {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 
 }
 #games h2 {
     display: grid;
-    grid-column: 1 / 5;
+    grid-column: 1 / 6;
 }
 
 

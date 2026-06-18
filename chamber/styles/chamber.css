@@ -424,7 +424,7 @@ form {
         transform: translateY(0);
     }
 }
-
+/*  */
 #memberLevel div {
     display: grid;
     grid-template-columns: auto 44px;
@@ -447,7 +447,7 @@ form {
     box-shadow: 0 0 10px #aaa;
 
 }
-
+   
 #memberLevel p {
     padding: 10px;
     color: slategray;

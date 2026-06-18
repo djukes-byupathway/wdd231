@@ -2,7 +2,7 @@ const projects = [
     {
         name: "Dave Stinks at Painting Minis",
         target_release: "Winter 2026",
-        system: "DnD",
+        system: "Mini Painting",
         status: "In Development",
         description: "Series of short videos of Dave trying to figure out what the hell is going wrong with the paint, brush, or design of minis that stop him from wanted to finish."
     }, {
@@ -36,6 +36,7 @@ function displayProducts(projects) {
     const projectContainer = document.querySelector("#projects");
 
     projects.forEach(element => {
+        console.log(element);
         // card element
         const theCard = document.createElement('div');
         theCard.classList.add("card");
@@ -47,20 +48,20 @@ function displayProducts(projects) {
 
         //release
         const targetRelease = document.createElement('span');
-        targetRelease.innerText = element.system;
-        targetRelease.classList.add = "release";
+        targetRelease.innerText = `target release: ${element.target_release}`;
+        targetRelease.classList.add("release");
         theCard.appendChild(targetRelease);
 
         //game system
         const theSystem = document.createElement('span');
         theSystem.innerText = element.system;
-        theSystem.classList.add = "system";
+        theSystem.classList.add("system");
         theCard.appendChild(theSystem);
 
         //status
         const theStatus = document.createElement('span');
         theStatus.innerText = element.status;
-        theStatus.classList.add = "status";
+        theStatus.classList.add("status");
         theCard.appendChild(theStatus);
 
         //description

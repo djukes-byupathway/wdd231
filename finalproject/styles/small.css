@@ -293,10 +293,6 @@ footer h2 {
 }
 
 
-
-
-
-
 /*----------- Founders Cards from About Us Page --------------*/
 #founders div {
     display: grid;
@@ -322,11 +318,61 @@ footer h2 {
     grid-area: photo;
     width: 100%;
 }
+
 #founders p {
     margin: 1rem 10px;
     grid-area: bio;
-    
+
 }
+
+/*----------- Project Cards from Upcoming Projects Page --------------*/
+#projects div {
+    display: grid;
+    grid-template-areas:
+        "header"
+        "systems"
+        "release"
+        "status"
+        "desc"
+
+    ;
+}
+
+#projects h3 {
+    grid-area: header;
+    margin: 0;
+    color: var(--neutral-400);
+    background-color: var(--primary-0);
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding: 1rem;
+
+}
+
+.release {
+
+    margin: 1rem 10px;
+    grid-area: release;
+}
+
+.system {
+    margin: 1rem 10px;
+    grid-area: systems;
+}
+
+.status {
+    margin: 1rem 10px;
+    grid-area: status;
+    font-style: italic;
+}
+
+#projects p {
+    margin: 1rem 10px;
+    grid-area: desc;
+
+}
+
 
 
 
@@ -342,8 +388,9 @@ footer h2 {
         "photo photo"
         "website website"
         "desc desc"
-        ;
+    ;
 }
+
 #games h3 {
     grid-area: header;
     margin: 0;
@@ -360,28 +407,35 @@ footer h2 {
     grid-area: photo;
     width: 100%;
     border-top: 1px solid var(--accent-0);
-    border-bottom: 1px solid var(--accent-0);}
+    border-bottom: 1px solid var(--accent-0);
+}
 
-        #games a {
-            margin: 1rem 10px;
-            grid-area: website;
-    
-        }
+#games a {
+    margin: 1rem 10px;
+    grid-area: website;
+    display: none;
+
+}
+
 #games p {
+    display: none;
     margin: 1rem 10px;
     grid-area: desc;
 
 }
 
 .publisher {
+    display: none;
     margin: 1rem 10px;
     grid-area: publisher;
 
 }
+
 .gametype {
+    display: none;
     margin: 1rem 10px;
-        grid-area: type;
-        font-style: italic;
+    grid-area: type;
+    font-style: italic;
 }
 
 
@@ -420,7 +474,110 @@ footer h2 {
     grid-area: desc;
 }
 
+/*----------- Signup form --------------*/
+form {
+    margin: 1rem 2%;
+}  /* end of form */
 
+form label {
+    display: block;
+        font-size: .8rem;
+        color: var(--accent-300);
+        padding-top: .2rem;
+}
+
+form h3 {
+    font-size: .9rem;
+    margin: 1.5rem 0 .2rem 0;
+    border-bottom: 1px solid var(--neutral-300);
+}
+
+input[type=text],
+input[type=tel],
+input[type=date],
+input[type=email],
+select,
+textarea {
+    display: block;
+    margin: .1rem 0 1rem 0;
+    padding: .3rem;
+    border: 1px solid #999;
+    border-radius: 4px;
+    border-left-width: 5px;
+    border-left-color: #555;
+    font-size: 1rem;
+    color: #3D405B;
+    width: 250px;
+}
+
+input:required {
+    border-left-color: #d70000;
+}
+
+input:focus {
+    border-left-color: black;
+    outline: none;
+}
+
+input:required:valid {
+    border-left-color: green;
+}
+input[type=submit] {
+    border: none;
+    text-align: center;
+    background-color: var(--secondary-400);
+    color: var(--neutral-400);
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    margin: 2rem 0;
+    font-size: 1.2rem;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+#formSignup {
+    border-radius: .5rem;
+}
+
+#formSignup div {
+    display: grid;
+    grid-template-columns: auto 44px;
+    background-color: var(--neutral-400);
+    padding: 5px;
+    border-bottom: #aaa 1px solid;
+
+}
+
+#formSignup button {
+    margin: 0;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    box-shadow: 0 0 10px #aaa;
+
+}
+
+#formSignup h2 {
+background-color: var(--primary-0);
+    color: var(--neutral-400);
+    margin: 0;
+    padding: .5rem;
+}
+
+form {
+    margin: 1rem 2%;
+}
+
+form h2 {
+    font-size: .9rem;
+        margin: 1.5rem 0 .2rem 0;
+        border-bottom: 1px solid #eee;
+}
+
+
+
+.fun {
+    background-color: white;
+}
 
 /*----------- Color Section for Site Plan Page --------------*/
 

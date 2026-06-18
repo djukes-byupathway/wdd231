@@ -11,7 +11,7 @@ const beneTitle = document.querySelector("#memberLevel h3");
 const beneList = document.querySelector("#memberLevel ul");
 const requested = document.getElementById("ts");
 
-
+  
 async function getMemberLevels() {
     const response = await fetch(url);
     const data = await response.json();
@@ -21,7 +21,7 @@ async function getMemberLevels() {
 
 getMemberLevels();
 requested.value = Date.now();
-
+// 
 
 myClose.addEventListener("click", () => mydialog.close());
 

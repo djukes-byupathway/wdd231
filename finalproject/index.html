@@ -11,7 +11,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- external Scripts -->
-    <script defer src="scripts/getdates.js"></script>
     <script defer src="scripts/navigation.js"></script>
 
     <!-- google fonts -->
@@ -47,18 +46,18 @@
     <main>
 
         <section class="hero" id="hero">
-            
-                <h1>Vault of Jukes</h1>
-                <picture>
-                    <source srcset="images/vault-large.webp" media="(min-width:64rem)">
-                    <source srcset="images/vault-medium.webp" media="(min-width:35rem)">
-                    <img src="images/vault-small.webp" alt="Vault of Jukes " loading="lazy">
-                </picture>
-                <p>Home to amazing adventures, clever traps, tricks, and tools for game masters, and welcoming
-                    and loyal
-                    community.</p>
-                <button>Signup for Newsletter</button>
-           
+
+            <h1>Vault of Jukes</h1>
+            <picture>
+                <source srcset="images/vault-large.webp" media="(min-width:64rem)">
+                <source srcset="images/vault-medium.webp" media="(min-width:35rem)">
+                <img src="images/vault-small.webp" alt="Vault of Jukes " loading="lazy">
+            </picture>
+            <p>Home to amazing adventures, clever traps, tricks, and tools for game masters, and welcoming
+                and loyal
+                community.</p>
+            <button id="openSignUp">Signup for Newsletter</button>
+
         </section>
 
 
@@ -68,7 +67,7 @@
                 <h3>Original Settings</h3>
                 <img src="images/colonial_ranger_crossbow.png" alt="Original Setting Ranger" loading="lazy">
                 <p>We create fantasy worlds filled with mystery and adventure, from the perpetual night of Dark World
-                     to the Jungles of Veilagh, to the magical destopian setting of Old Hexburg. 
+                    to the Jungles of Veilagh, to the magical destopian setting of Old Hexburg.
                 </p>
             </div>
             <div class="card hl-card">
@@ -91,6 +90,81 @@
 
         </section>
 
+        <section class="fun">
+            <h2>Name Generator</h2>
+            <form id ="namesForm" action="">
+                <label for="country">Choose a country:</label>
+                <select name="country" id="country">
+                    <option value="IN">India</option>
+                    <option value="DE">Germany</option>
+                    <option value="FR">France</option>
+                    <option value="GB">England</option>
+                    <option value="BY">Belarus</option>
+                    <option value="FI">Finland</option>
+                    <option value="VN">Vietnam</option>
+                    <option value="MM">Myanmar</option>
+                    <option value="TH">Thailand</option>
+                    <option value="SN">Senegal</option>
+                    <option value="RU">Russia</option>
+                    <option value="Turkey">TR</option>
+                    <option value="Palestine">PS</option>
+                    <option value="IL">Israel</option>
+                    <option value="HU">Hungary</option>
+                    <option value="IE">Ireland</option>
+                </select>
+                <h3>Gender</h3>
+                <label><input type="radio" name="gender" value="m" checked> Male</label>
+                <label><input type="radio" name="gender" value="f"> Female</label>
+                <h3>Number of Names to retreive</h3>
+                <label><input type="radio" name="numNames" value="1" checked> One</label>
+                <label><input type="radio" name="numNames" value="3"> Three</label>
+                <label><input type="radio" name="numNames" value="5"> Five</label>
+
+                <input type="submit" value="Get Names">
+            </form>
+
+        </section>
+
+
+        <dialog id="formSignup">
+            <div>
+                <h2>Newsletter Signup</h2>
+                <button id="dialogClose">X</button>
+            </div>
+            <form method="get" action="thankyou.html" class="joinnow">
+                <label>First Name <input type="text" name="first" required autocomplete="given-name"
+                        title="Your First Name"></label>
+                <label>Last Name <input type="text" name="last" required autocomplete="family-name"
+                        title="Your Last Name"></label>
+                <label>Email <input type="email" name="email" required placeholder="john89@gmail.com" title="Your Email"
+                        autocomplete="email"></label>
+                <label for="desc">Feedback / Comments / Suggestions<br>
+                    <textarea name="desc" id="desc" rows="5" title="Organization Description"></textarea>
+                </label>
+
+                <h3>What Content Are You Interested In?</h3>
+                <label for="rpg"><input type="checkbox" id="rpg" name="rpg" value="yes">
+                    Role Playing Game (RPG)
+                </label>
+                <label for="ccg"><input type="checkbox" id="ccg" name="ccg" value="yes">
+                    Collectable Card Game (CCG)
+                </label>
+                <label for="bg"><input type="checkbox" id="bg" name="bg" value="yes">
+                    Board Game
+                </label>
+                <label for="skirmish"><input type="checkbox" id="skirmish" name="skirmish" value="yes">
+                    Table Tope Skirmish Game
+                </label>
+                <label for="war"><input type="checkbox" id="war" name="war" value="yes">
+                    Table Top War Game
+                </label>
+
+                <button type="submit">Sign Up</button>
+
+            </form>
+
+        </dialog>
+        <script type="module" src="scripts/vault-home.js"></script>
     </main>
     <footer id="foot">
         <div class="left">

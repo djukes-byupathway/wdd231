@@ -101,7 +101,6 @@ function displayGames(games) {
     const gamesContainer = document.querySelector("#games");
 
     games.forEach(element => {
-        console.log(element);
         // card element
         const theCard = document.createElement('div');
         theCard.classList.add("card");
@@ -127,12 +126,12 @@ function displayGames(games) {
         //publisher
         const thePublisher = document.createElement('span');
         thePublisher.innerText = element.publisher;
-        thePublisher.classList.add = "publisher";
+        thePublisher.classList.add("publisher");
         theCard.appendChild(thePublisher);
         //type
         const theType = document.createElement('span');
-        theType.innerText = element.publisher;
-        theType.classList.add = "gametype";
+        theType.innerText = element.type;
+        theType.classList.add("gametype");
         theCard.appendChild(theType);
 
         gamesContainer.appendChild(theCard);
