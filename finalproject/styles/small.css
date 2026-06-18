@@ -707,3 +707,7 @@ form h2 {
     width: 5rem;
     height: 5rem;
 }
+
+.right a {
+    color: var(--neutral-400);
+}
